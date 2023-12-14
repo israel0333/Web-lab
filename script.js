@@ -5,6 +5,7 @@ const formOpenBtn = document.querySelector("#form-open"),
   signupBtn = document.querySelector("#signup"),
   loginBtn = document.querySelector("#login"),
   pwShowHide = document.querySelectorAll(".pw_hide");
+  free = document.getElementById('free');
 formOpenBtn.addEventListener("click", () => home.classList.add("show"));
 formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
 pwShowHide.forEach((icon) => {
@@ -27,3 +28,6 @@ loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formContainer.classList.remove("active");
 });
+free.addEventListener("click", () => {
+  alert('The function of good software is to make the complex appear to be simple');
+})
